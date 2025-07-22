@@ -18,7 +18,7 @@ int main() {
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    printf("--Para carta 1--");
+    printf("--Para carta 1--\n");
     //estado
     printf("digite o estado (de A ate H):");
     scanf("%c",&estado1);
@@ -41,10 +41,10 @@ int main() {
     printf("digite a quantidade de pontos turisticos da cidade:");
     scanf("%d",&pnt_turistico1);
 
-     printf("--Para carta 2--");
+    printf("--Para carta 2--");
     //estado
     printf("digite o estado (de A ate H):");
-    scanf("%c",&estado2);
+    scanf(" %c",&estado2);
     //codigo do estado
     printf("digite o codigo do estado(de 1 a 4):");
     scanf("%s",&cod_carta2);
@@ -63,6 +63,18 @@ int main() {
     //pontos turisticos
     printf("digite a quantidade de pontos turisticos da cidade:");
     scanf("%d",&pnt_turistico2);
+    printf("\n\n");
+    
+    printf("Carta 1 \n");
+    printf("Estado:%c \n",estado1);
+    printf("Codigo:%s \n",cod_carta1);
+    printf("Nome da cidade:%s \n",nome_cidade1);
+    printf("População:%d \n",pop1);
+    printf("área (em Km²):%f \n",area1);
+    printf("PIB:%f \n",pop1);
+    printf("Numero de Pontos Turísticos:%d \n",pnt_turistico1);
+   
+    printf("\n");
     
     printf("Carta 2 \n");
     printf("Estado:%c \n",estado2);
@@ -70,8 +82,8 @@ int main() {
     printf("Nome da cidade:%s \n",nome_cidade2);
     printf("População:%d \n",pop2);
     printf("área (em Km²):%f \n",area2);
-    printf("PIB:%f \n",pop2);
+    printf("PIB:%f \n",pib2);
     printf("Numero de Pontos Turísticos:%d \n",pnt_turistico2);
-   
+
     return 0;
 }
